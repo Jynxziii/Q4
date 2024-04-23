@@ -1,3 +1,15 @@
+import random 
+
+gems = 100
+diamonds = 0
+
+def challenge():
+    questions = {"What color is a frog?": "green", "What color is a flamingo?": "pink", "What color is the sky?": "blue"} 
+    question, answer = random.choice(list(d.items()))
+    if user_answer == answer:
+        print("Congradulations, you earned 10 diamonds!")
+    else:
+        print("Wrong answer! Try again.")
 game = GemGame()
 while True:
     print("\n=== Gem Game ===")
@@ -10,4 +22,14 @@ while True:
     choice = input("Enter your choice: ")
 
     if choice == "1":
+        challenge()
+    elif choice == "2":
+        spin_wheel()
+    elif choice == "3":
+        display_balance()
+    elif choice == "4":
+        print("Thanks for playing!")
+        break
+    else:
+        print("Invalid choice. Please choose again.")
     

@@ -2,7 +2,9 @@ import random
 
 gems = 100
 diamonds = 0
+
 def
+
 def challenge():
     questions = {"What color is a frog?": "green", "What color is a flamingo?": "pink", "What color is the sky?": "blue"} 
     question, answer = random.choice(list(d.items()))
@@ -10,6 +12,14 @@ def challenge():
         print("Congradulations, you earned 10 diamonds!")
     else:
         print("Wrong answer! Try again.")
+
+def spin_wheel():
+        if GemGame.gems < 10:
+            print("Sorry, you don't have enough gems to spin the wheel.")
+            return
+        GemGame.gems -= 10
+        prize = random.choice(["Pencil", "Eraser", "Gum", "Nothing"])
+        print(f"Spinning the wheel... You won: {prize}")
 
 
 game = GemGame()

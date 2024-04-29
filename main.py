@@ -15,7 +15,7 @@ def challenge():
 
 def spin_wheel():
         if GemGame.gems < 10:
-            print("Sorry, you don't have enough gems to spin the wheel.")
+            print("Sorry, you don't have enough gems to spin.")
             return
         GemGame.gems -= 10
         prize = random.choice(["Pencil", "Eraser", "Gum", "Nothing"])

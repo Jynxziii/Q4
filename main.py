@@ -3,9 +3,9 @@ import random
 gems = 100
 diamonds = 0
 
-def
+def 
 #challenge to make gems
-def challenge():
+def challenge(): 
     questions = {"What color is a frog?": "green", "What color is a flamingo?": "pink", "What color is the sky?": "blue"} 
     question, answer = random.choice(list(d.items()))
     if user_answer == answer:

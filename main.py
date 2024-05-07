@@ -1,5 +1,5 @@
 import random 
-
+ 
 gems = 0
 
 def display_balance():  

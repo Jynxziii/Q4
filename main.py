@@ -1,6 +1,6 @@
 import random 
  
-gems = 0
+gems = 0 
 
 def display_balance():  
   print("\n{|You have", gems, "gems|}")

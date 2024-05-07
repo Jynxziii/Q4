@@ -3,7 +3,7 @@ import random
 gems = 0 
 
 def display_balance():  
-  print("\n{|You have", gems, "gems|}")
+  print("\n{|You have", gems, "gems|}") 
 #challenge to make gems
 def challenge(): 
     global gems 

@@ -5,7 +5,7 @@ gems = 0
 def display_balance():  
   print("\n{|You have", gems, "gems|}") 
 #challenge to make gems
-def challenge(): 
+def challenge(): s
     global gems 
     questions = {"\nWhat color is a frog?": "green", "\nWhat color is a flamingo?": "pink", "\nWhat color is the sky?": "blue"} 
     question, answer = random.choice(list(questions.items()))

@@ -11,7 +11,7 @@ def challenge():
     question, answer = random.choice(list(questions.items()))
     print(question) 
     user_answer=input("\nEnter your answer: ")
-    if user_answer == answer:
+    if user_answer == answer: 
         print("\n Congradulations, you earned 10 diamonds!")
         gems += 10
     else:

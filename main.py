@@ -30,6 +30,12 @@ def spin_wheel():
         gems -= 10
         prize = random.choice(["Pencil", "Eraser", "Gum", "Nothing"])
         print(f"Spinning the wheel... You won: {prize}")
+def Pick_A_Number():
+  global gems
+  if random.random()==3:
+    gems*=15
+    print("you have x15 your gems!!")
+    
 def DoubleGems():
   global gems
   if random.random() >= .5: 
@@ -48,6 +54,7 @@ while True:
     print("3. Show Gem Balance")
     print("4. Double Gems (costs 20 gems)")
     print("5. Quit")
+    print("6. Pick a number 1-10(costs 30 gems) x15 your gems!")
     print("wheel prizes: pencil, eraser, gum, nothing \n")
     print("\n")
 

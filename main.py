@@ -37,6 +37,7 @@ def DoubleGems():
      print("You have doubled your gems!")
   else:
     gems = 0
+    print("You lost all your gems!")
     display_balance()
   
 #UI that the user sees when game starts.

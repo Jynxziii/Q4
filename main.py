@@ -37,7 +37,7 @@ def DoubleGems():
      print("You have doubled your gems!")
   else:
     gems = 0
-   
+    display_balance()
   
 #UI that the user sees when game starts.
 while True:
@@ -65,3 +65,5 @@ while True:
         break
     else:
         print("Invalid choice. Please choose again.")
+
+

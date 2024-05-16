@@ -36,6 +36,9 @@ def Pick_A_Number():
   if random.random()==3:
     gems*=15
     print("you have x15 your gems!!")
+  else: 
+    gems*=0
+    print("you have lost all your gems!!!")
     
 def DoubleGems():
   global gems

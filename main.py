@@ -31,20 +31,26 @@ def spin_wheel():
         gems -= 10
         prize = random.choice(["Pencil", "Eraser", "Gum", "Nothing"])
         print(f"Spinning the wheel... You won: {prize}")
+        display_balance()
 def Pick_A_Number():
   global gems
   if random.random()==3:
     gems*=15
     print("you have x15 your gems!!")
+    display_balance()
   else: 
     gems*=0
     print("you have lost all your gems!!!")
     display_balance()
 def DoubleGems():
   global gems
+  if gems < 20:
+            print("\nSorry, you don't have enough gems to double.")
+            return
   if random.random() >= .5: 
      gems *= 2
      print("You have doubled your gems!")
+     display_balance()
   else:
     gems = 0
     print("You lost all your gems!")
@@ -53,7 +59,7 @@ def DoubleGems():
 #UI that the user sees when game starts.
 while True:
     print("\n<<=== Gem Game ===>>")
-    print("1. Play a Challenge (gives 5 gems)")
+    print("1. Play a Challenge (gives 10 gems)")
     print("2. Spin Wheel (costs 10 gems)")
     print("3. Show Gem Balance")
     print("4. Double Gems (costs 20 gems)")

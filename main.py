@@ -34,6 +34,8 @@ def spin_wheel():
         display_balance()
 def Pick_A_Number():
   global gems
+  if gems < 10:
+            print("\nSorry, you don't have enough gems to spin.")
   if random.random()==3:
     gems*=15
     print("you have x15 your gems!!")
@@ -80,7 +82,9 @@ while True:
         DoubleGems()
     elif choice == "5":
         print("Thanks for playing!")
-        break
+    elif choice == "6":
+        Pick_A_Number()
+      break
     else:
         print("Invalid choice. Please choose again.")
 

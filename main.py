@@ -39,7 +39,7 @@ def Pick_A_Number():
   else: 
     gems*=0
     print("you have lost all your gems!!!")
-    
+    display_balance()
 def DoubleGems():
   global gems
   if random.random() >= .5: 

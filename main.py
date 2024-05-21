@@ -19,7 +19,10 @@ def challenge():
                  "\nWhat color is a bannana?": "yellow", 
                  "\nWhat color is a strawberry?": "red",
                  "\nWhat color is a blueberry?": "blue", 
-                 "\nWhat color is a raspberry?": "red"} 
+                 "\nWhat color is a raspberry?": "red",
+                 "\nWhat color is a blanco?": "white",
+                 "\nWhat color is a rosado?": "pink",
+                 "\nWhat color is a negro?": "black"} 
     question, answer = random.choice(list(questions.items()))
     print(question) 
     user_answer=input("\nEnter your answer: ")
@@ -56,8 +59,10 @@ def question():
     if user_answer == answer: 
         print("\n Congradulations, you earned 30 diamonds!")
         gems += 30
+        display_balance()
     else:
         print("\n Wrong answer! Try again.")
+        question()
 
 def Pick_A_Number():
   global gems
@@ -108,8 +113,21 @@ while True:
         display_balance()
     elif choice == "5":
         DoubleGems()
+    elif choice == "7"
+        Pick_A_Number()
     elif choice == "6":
         print("Thanks for playing!")
         break
     else:
         print("Invalid choice. Please choose again.")
+
+
+asci art avalible:
+
+
+money 
+casino
+arcade machine
+
+
+

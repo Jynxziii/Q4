@@ -63,7 +63,7 @@ def question():
     else:
         print("\n Wrong answer! Try again.")
         question()
-
+   as where
 def Pick_A_Number():
   global gems
   if random.random()==3:
@@ -74,7 +74,13 @@ def Pick_A_Number():
     gems*=0
     print("you have lost all your gems!!!")
     display_balance()
-def DoubleGems():
+def Contrast()
+  global gems
+  if gems == 10:
+    print("you can buy pizza")
+  if gems ==20000:
+    print("you can buy empire state building")
+def DoubleGems():  
   global gems
   if gems < 20:
             print("\nSorry, you don't have enough gems to double.")
@@ -97,6 +103,7 @@ while True:
     print("4. Show Gem Balance")
     print("5. Double Gems (costs 20 gems)")
     print("6. Quit")
+    print("7. what can i buy with my items?")
     print("7. Pick a number 1-10(costs 30 gems) x15 your gems!")
     print("wheel prizes: pencil, eraser, gum, nothing \n")
     print("\n")
@@ -113,7 +120,9 @@ while True:
         display_balance()
     elif choice == "5":
         DoubleGems()
-    elif choice == "7"
+    elif choice == "7" 
+       Contrast()
+    elif choice == "8"
         Pick_A_Number()
     elif choice == "6":
         print("Thanks for playing!")

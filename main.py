@@ -94,6 +94,22 @@ def challenge():
 #game that gives you the prizes
 def spin_wheel():
         global gems
+        print('''
+        .                  __
+                   . ' || ' .
+                .`     ||     `.
+              .   \    ||    /   .
+           .'/ _   \ .-''-. /   _ \
+         .' J   `- .' .--. '. -`   L
+       .'   F======' ((<>)) '======J
+            L      '. `||' .'      F
+      (      \  _.-  `-||-'  -._  /
+              .     /  ||  \     .
+                .  /   ||   \  .
+     /            ` . _||_ . `
+    /  _________    _.-||_________
+        ___.....       ||._      .
+                      /__\/  ''') 
         if gems < 10:
             print("\nSorry, you don't have enough gems to spin.")
             return

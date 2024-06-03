@@ -80,9 +80,13 @@ def Reaction():[BETA STILL IN PROGRESS]
                 display.blit(reaction_text, (width // 2 - reaction_text.get_width() // 2, height // 2 + 10))
             restart_text = font.render("Press SPACE to restart", True, GREEN)
             display.blit(restart_text, (width // 2 - restart_text.get_width() // 2, height // 2 + 50))
-
+         if reaction time>=.2:
+           print("sorry try again next time")
+         else:
+           print("congrats!!! you won 50 gems!")
+           gems+=50
         pygame.display.flip()
-
+#Make it so user does not need to play again and quits the GUI and gives user 30-50 points if they got it under .2 seconds
     pygame.quit()
 
 def challenge(): 
@@ -280,7 +284,11 @@ def Pick_A_Number():
     display_balance()
   else: 
     gems*=0
-    print('''
+  
+  
+  
+  
+  print('''
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡭⠥⠐⠒⠒⠒⠒⠂⠤⢤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⢀⣤⠖⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠲⣤⡀⠀⠀⠀⠀⠀
 ⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⢦⡀⠀⠀⠀
